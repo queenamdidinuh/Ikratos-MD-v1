@@ -12,32 +12,32 @@ const { generateWAMessageFromContent, proto } = (await import('@adiwajshing/bail
 
 const defaultMenu = {
   before: `
-╭─────═[ INFO USER ]═─────⋆
+Dinuwa Official²⁰²³    
+🍿INFO USER🍿 ───⋆
 │╭───────────────···
-┴│☂︎ *Name:* %name
-⬡│☂︎ *Tag:* %tag
+🍥│ Name: %name
+🍥│ Tag: %tag
 ┬╰────────────────···
 ┠─────═[ TODAY ]═─────⋆
 │╭────────────────···
-┴│    *${ucapan()} %name!*
-⬡│☂︎ *Date:* %week %weton
-⬡│☂︎ *Date:* %date
-⬡│☂︎ *Date Islamic:* %dateIslamic
-┬│☂︎ *Time:* %time
+┴│    ${ucapan()} %name!
+❄️│ Date: %week %weton
+❄️│ Date: %date
+❄️│ The Whatsapp User Bot 
+┬│  Deployed By Dinuwa Official²⁰²³
 │╰────────────────···
 ┠─────═[ INFO BOT ]═─────⋆
 │╭────────────────···
-┴│☂︎ *Name Bot:* %me
-⬡│☂︎ *Mode:* %mode
-⬡│☂︎ *Prefix:* [ *%_p* ]
-⬡│☂︎ *Uptime:* %muptime
-┬│☂︎ *Database:* %rtotalreg dari %totalreg
+┴│  Name Bot: Dinuwa Official²⁰²³
+🔥│ Mode: Public VPS
+🔥│ Prefix: [ %_p ]
+🔥│ Uptime: %muptime
+┬│  Database: %rtotalreg dari %totalreg
 │╰────────────────···
 ╰──────────═┅═──────────
-
-⃝▣──「 *INFO CMD* 」───⬣
-│ *Ⓟ* = Premium
-│ *Ⓛ* = Limit
+⃝▣──「 INFO BOT 」───⬣
+│ 💖Owner = Dinuwa Official²⁰²³
+│ 💖Contact = 94740804536
 ▣────────────⬣
 %readmore
 `.trimStart(),
@@ -147,72 +147,77 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
    
    const sections = [
    {
-	title: `${htki} ᴍᴀɪɴ ${htka}`,
+	title: `${htki} ᴍᴀɪɴ 𝓜𝓔𝓝𝓤 ${htka}`,
 	rows: [
-	    {title: `⚡ ${pmenus} 𝚂𝙿𝙴𝙴𝙳 𝙱𝙾𝚃`, rowId: ".ping", description: "display bot response speed"},
-	    {title: `⏰ ${pmenus} 𝚁𝚄𝙽𝚃𝙸𝙼𝙴 𝙱𝙾𝚃`, rowId: ".runtime", description: "display bot running time"}, 
-	    {title: `💌 ${pmenus} 𝙾𝚆𝙽𝙴𝚁 𝙱𝙾𝚃`, rowId: ".creator", description: "display info of bot owner"},
-	    {title: `📔 ${pmenus} 𝚂𝙲𝚁𝙸𝙿𝚃 𝙱𝙾𝚃`, rowId: ".sc", description: `𝚂𝚘𝚞𝚛𝚌𝚎 𝙲𝚘𝚍𝚎 ${namebot}`},
+	    {title: ` ${pmenus} 🇱🇰𝚂𝙿𝙴𝙴𝙳 𝙱𝙾𝚃`, rowId: ".ping", description: "display Dinuwa Official²⁰²³ bot response speed"},
+	    {title: ` ${pmenus} 🇱🇰𝚁𝚄𝙽𝚃𝙸𝙼𝙴 𝙱𝙾𝚃`, rowId: ".runtime", description: "display Dinuwa Official²⁰²³ bot running time"}, 
+	    {title: ` ${pmenus} 🇱🇰𝙾𝚆𝙽𝙴𝚁 𝙱𝙾𝚃`, rowId: ".creator", description: "display info of Dinuwa Official²⁰²³ bot owner"},
+	    {title: ` ${pmenus} 🇱🇰𝚂𝙲𝚁𝙸𝙿𝚃 𝙱𝙾𝚃`, rowId: ".sc", description: `𝚂𝚘𝚞𝚛𝚌𝚎 𝙲𝚘𝚍𝚎 ${namebot}`},
 	]
     },{
-	title: `${htki} sᴜᴘᴘᴏʀᴛ ${htka}`,
+	title: `${htki} 𝓼ᴜᴘᴘᴏʀᴛ 𝓜𝓔𝓝𝓤 ${htka}`,
 	rows: [
-	    {title: `💹 ${pmenus} 𝙳𝙾𝙽𝙰𝚃𝙴`, rowId: ".donasi", description: 'support the owner to be more enthusiastic'},
+	    {title: ` ${pmenus} 𝙳𝙾𝙽𝙰𝚃𝙴 𝓜𝓔𝓝𝓤`, rowId: ".donasi", description: 'support the owner of Dinuwa Official²⁰²³ Bot'},
 	]
 	},{
-	title: `${htki} ᴍᴇɴᴜ ${htka}`,
+	title: `${htki} 𝓜𝓔𝓝𝓤 ${htka}`,
 	rows: [
-	    {title: `💬 ${pmenus} All`, rowId: ".? all", description: "Showing all BOT commands"},
-	    {title: `🌱 ${pmenus} Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
-	{title: `✨ ${pmenus} Exp`, rowId: ".? xp", description: "Let's increase your rank!"},
-	{title: `🎮 ${pmenus} Game`, rowId: ".? game", description: "The game is fun (๑˃̵　ᴗ　˂̵)"},
-	{title: `🧩 ${pmenus} Fun`, rowId: ".? fun", description: "Safe features for families"},
-	{title: `🐚 ${pmenus} Kerang`, rowId: ".? kerangajaib", description: "Ask the club leader"},
-	{title: `📑 ${pmenus} Quotes`, rowId: ".? quotes", description: "Random Inspiration"},
-	{title: `⛩️ ${pmenus} Anime`, rowId: ".? anime", description: "Wibu wibu🐦"},
-	{title: `🔞 ${pmenus} Nsfw`, rowId: ".? nsfw", description: "Tch, sagnean policy"},
-	{title: `🌟 ${pmenus} Premium`, rowId: ".? premium", description: "For premium users"},
-	{title: `🎭 ${pmenus} Anonymous Chats`, rowId: ".? anonymous", description: "Talk to strangers"},
-	{title: `📖 ${pmenus} Al-Quran`, rowId: ".? quran", description: "Let\'s repent sister"},
-	{title: `🌎 ${pmenus} Internet`, rowId: ".? internet", description: "Search for something on BOT"},
-	{title: `📩 ${pmenus} Downloaders`, rowId: ".? downloader", description: "Download something from the BOT"},
-	{title: `🎨 ${pmenus} Stikers`, rowId: ".? stiker", description: "Create Stickers in BOT"},
-	{title: `✏️ ${pmenus} Nulis`, rowId: ".? nulis", description: "Why are you lazy to write?"},
-	{title: `🎧 ${pmenus} Audio`, rowId: ".? audio", description: "Change Audio with Filters"},
-	{title: `🏢 ${pmenus} Group`, rowId: ".? group", description: "Only Groups"},
-	{title: `👑 ${pmenus} Admin`, rowId: ".? admin", description: "Only Admin Group"},
-	{title: `🗂️ ${pmenus} Database`, rowId: ".? database", description: "Save something on BOT"},
-	{title: `🛠️ ${pmenus} Tools`, rowId: ".? tools", description: "Maybe this tool can help?"},
-	{title: `ℹ️ ${pmenus} Info`, rowId: ".? info", description: "Info info BOT"},
-	{title: `👩‍💻 ${pmenus} Owner`, rowId: ".? owner", description: "Owner Only!"},
-	{title: `❓ ${pmenus} No Category`, rowId: ".? nocategory", description: "Uncategorized features!"},
+	    {title: ` ${pmenus} 𝓐𝓵𝓵 𝓜𝓔𝓝𝓤`, rowId: ".? all", description: "Showing all Dinuwa Official²⁰²³ BOT commands"},
+	    {title: ` ${pmenus} 𝓡𝓹𝓰 𝓜𝓔𝓝𝓤`, rowId: ".? rpg", description: "Game Epic Dinuwa Official²⁰²³ Rpg!"},
+	{title: ` ${pmenus} 𝓔𝔁𝓹 𝓜𝓔𝓝𝓤`, rowId: ".? xp", description: "Let's increase your rank!"},
+	{title: ` ${pmenus} 𝓖𝓪𝓶𝓮 𝓜𝓔𝓝𝓤`, rowId: ".? game", description: "The game is fun (๑˃̵　ᴗ　˂̵)"},
+	{title: ` ${pmenus} 𝓕𝓾𝓷 𝓜𝓔𝓝𝓤`, rowId: ".? fun", description: "Safe features for families"},
+	{title: ` ${pmenus} 𝓚𝓮𝓻𝓪𝓷𝓰 𝓜𝓔𝓝𝓤`, rowId: ".? kerangajaib", description: "Ask the club leader"},
+	{title: ` ${pmenus} 𝓠𝓾𝓸𝓽𝓮𝓼 𝓜𝓔𝓝𝓤`, rowId: ".? quotes", description: "Random Inspiration"},
+	{title: ` ${pmenus} 𝓐𝓷𝓲𝓶𝓮 𝓜𝓔𝓝𝓤`, rowId: ".? anime", description: "Find the Anime"},
+	{title: ` ${pmenus} 𝓝𝓼𝓯𝔀 𝓜𝓔𝓝𝓤`, rowId: ".? nsfw", description: "18+ only Dinuwa Official²⁰²³"},
+	{title: ` ${pmenus} 𝓟𝓻𝓮𝓶𝓲𝓾𝓶 𝓜𝓔𝓝𝓤`, rowId: ".? premium", description: "For premium users"},
+	{title: ` ${pmenus} 𝓐𝓷𝓸𝓷𝔂𝓶𝓸𝓾𝓼 𝓒𝓱𝓪𝓽𝓼 𝓜𝓔𝓝𝓤`, rowId: ".? anonymous", description: "Talk to strangers"},
+	{title: ` ${pmenus} 𝓐𝓵-𝓠𝓾𝓻𝓪𝓷 𝓜𝓔𝓝𝓤`, rowId: ".? quran", description: "Let\'s repent sister"},
+	{title: ` ${pmenus} 𝓘𝓷𝓽𝓮𝓻𝓷𝓮𝓽 𝓜𝓔𝓝𝓤`, rowId: ".? internet", description: "Search for something on Dinuwa Official²⁰²³ BOT"},
+	{title: ` ${pmenus} 𝓓𝓸𝔀𝓷𝓵𝓸𝓪𝓭𝓮𝓻𝓼 𝓜𝓔𝓝𝓤`, rowId: ".? downloader", description: "Download something from the Dinuwa Official²⁰²³ BOT"},
+	{title: ` ${pmenus} 𝓢𝓽𝓲𝓴𝓮𝓻𝓼 𝓜𝓔𝓝𝓤`, rowId: ".? stiker", description: "Create Stickers in Dinuwa Official²⁰²³ BOT"},
+	{title: ` ${pmenus} 𝓝𝓾𝓵𝓲𝓼 𝓜𝓔𝓝𝓤`, rowId: ".? nulis", description: "Why are you lazy to write?"},
+	{title: ` ${pmenus} 𝓐𝓾𝓭𝓲𝓸 𝓜𝓔𝓝𝓤`, rowId: ".? audio", description: "Change Audio with Filters"},
+	{title: ` ${pmenus} 𝓖𝓻𝓸𝓾𝓹 𝓜𝓔𝓝𝓤`, rowId: ".? group", description: "Only Groups"},
+	{title: ` ${pmenus} 𝓐𝓭𝓶𝓲𝓷 𝓜𝓔𝓝𝓤`, rowId: ".? admin", description: "Only Admin Group"},
+	{title: ` ${pmenus} 𝓓𝓪𝓽𝓪𝓫𝓪𝓼𝓮 𝓜𝓔𝓝𝓤`, rowId: ".? database", description: "Save something on BOT"},
+	{title: ` ${pmenus} 𝓣𝓸𝓸𝓵𝓼 𝓜𝓔𝓝𝓤`, rowId: ".? tools", description: "Maybe this tool can help?"},
+	{title: ` ${pmenus} 𝓓𝓲𝓷𝓾𝔀𝓪 𝓞𝓯𝓯𝓲𝓬𝓲𝓪𝓵²⁰²³ 𝓘𝓷𝓯𝓸 𝓜𝓔𝓝𝓤`, rowId: ".? info", description: "Info info Dinuwa Official²⁰²³ BOT"},
+	{title: ` ${pmenus} 𝓞𝔀𝓷𝓮𝓻 𝓜𝓔𝓝𝓤`, rowId: ".? owner", description: "Owner Only!"},
+	{title: ` ${pmenus} හී හී නිකන් දැම්මේ 🤣`, rowId: ".? nocategory", description: "Uncategorized features!"},
 	]
   },
 ]
 
-/*let tek = `✧────···[ Dashboard ]···────✧
-*${ucapan()} ${conn.getName(m.sender)}*
+/*let tek = `▁ ▂ ▃ ▅ Dinuwa Official²⁰²³ ▅ ▃ ▂ ▁
+${ucapan()} ${conn.getName(m.sender)}
 ╭━━━━━━━━━━━━━━━━┈─✧
 ┴
-│⬡ Active for ${mpt}
-│⬡ Prefix : [ ${_p} ]
-│⬡ *${Object.keys(global.db.data.users).length}* User
-│⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Banned chat
-│⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* User Banned
+│🍿 Active for ${mpt}
+│🍿 Prefix : [ ${_p} ]
+│ 🍿 Join PUBLIC group : https://chat.whatsapp.com/IKbvhlnSXFWDnW7ZxSWwLN
+│ 🍿 JOIN SUPPORT GROUP : https://chat.whatsapp.com/Jyjqx7KBfgjDC7QcefHB1S
+│🍿 *💞When deploy the bot if create an issue, වට්සැප් එකෙන් contact කරපන්..  wa.me/94740804536 💞
+  
 ┬
 ├━━━━━━━━━━━━━━━━┈─⋆
-│ ▸ *ᴀᴜᴛʜᴏʀ :* Ahmad Ali
-┴ ▸ *ᴏᴡɴᴇʀ :* xIKRATOSx
-✧
-┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
-│ Give me a break, SIS ^ω^
+│ 💧 CREATOR: ▁ ▂ ▃ ▅ ▆  Dinuwa Official²⁰²³ ▆ ▅ ▃ ▂ ▁
+┴ 🔥 Github : 
+  🍄https://github.com/dinuwah/Dinuwa-Official-USER-BOT
+❄️ SPECIAL THANKS
+    TO : 
+                                 
+💥Dinuwa Official²⁰²³
+💥Dinethra Oshada
+💥Ikratox Bro
 ╰━━━━━━━━━━━━━━━━┈─◂`
 const listMessage = {
   text: tek,
   footer: wm2,
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `Click Here ⎙`, 
+  buttonText: `🚭 Click Here Menu 🚭`, 
   sections
 }
   if (teks == '404') {
@@ -348,7 +353,7 @@ const listMessage = {
     itemCount : 2022,
     status: 1,
     surface : 1,
-    message: `Hai Sis ${name}!`, 
+    message: `Hai සහෝ ${name}!`, 
     orderTitle: `▮Menu ▸`,
     thumbnail: await (await fetch(flaaa + 'Menu')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
@@ -373,7 +378,7 @@ const listMessage = {
     }
     }
     }
-    await conn.reply(m.chat, '*Wait a minute Sis. . .*', ftrol) 
+    await conn.reply(m.chat, '*Ohoma poddak idapm besikayo 😂*', ftrol) 
     
     //------------------< MENU >----------------
     
@@ -431,7 +436,7 @@ const listMessage = {
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://github.com/ImYanXiao/Elaina-MultiDevice'
+                        url: 'https://github.com/dinuwah'
                     }
                 },
                 {
@@ -485,7 +490,7 @@ const listMessage = {
       showAdAttribution: true
       }}}}}}, {})*/
       
-     //---Made By @ImYanXiao
+     //---Made By @Dinuwa Official²⁰²³
     // Mampus Di Enc 🧢
     // Gausah Dihapus, Thx
     //------------------ DOCUMENT WITH EXTERNALADS WITHOUT BUTTON
@@ -537,9 +542,9 @@ function clockStringP(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Karachi').format('HH')
-  let res = "Why haven\'t you slept yet?? 🥱"
+  let res = "තාම නිදිද සුද්දහ් 😂 "
   if (time >= 4) {
-    res = "Morning 🌄"
+    res = "GM bza 😂"
   }
   if (time >= 10) {
     res = "Day ☀️"
@@ -548,7 +553,7 @@ function ucapan() {
     res = "Afternoon 🌇"
   }
   if (time >= 18) {
-    res = "night 🌙"
+    res = "GN bza 🌙"
   }
   return res
 }
