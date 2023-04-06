@@ -10,26 +10,33 @@
  * @file : Ikratos-fancy.js
  **/
 
- import { listall, tiny, fancytext } from '../lib/index.js';
+ import fancyText from '../lib/fancy.js';
 
-
- let handler = async(Void, citel, text) => {
-  if (isNaN(text.split(" ")[0]) || !text) {
-      let text = tiny(
-          "Fancy text generator\n\nExample: .fancy 32 Secktor\n\n"
-      );
-      listall("Secktor Bot").forEach((txt, num) => {
-          text += `${(num += 1)} ${txt}\n`;
-      });
-      return await citel.reply(text);
+let handler = async (m, { conn, text, args }) => {
+  if (!text) {
+    return m.reply('Please provide some text to apply the styles to.');
   }
 
-  let fancytextt = await fancytext(`${text.slice(2)}`, text.split(" ")[0])
-  citel.reply(fancytextt)
+  const inputArgs = text.split(" ");
+  const code = parseInt(inputArgs[0]);
+  const message = inputArgs.slice(1).join(" ");
 
+  if (!message) {
+    return await m.reply('Reply to a text or type text after command with a numeric code\n_Example: .fancy 10 Hello_\n                      .fancy Hello world\n                      .fancy <reply> 13\n\n'+String.fromCharCode(8206).repeat(4001)+fancy.list('Text here',fancy));
+  }
+
+  try {
+    if (!code) {
+      return await m.reply(fancy.list(message, fancy));
+    }
+    return await m.reply(fancy.apply(fancy[code - 1], m.quotedMsg ? m.quotedMsg.text : message));
+  } catch {
+    return await m.reply('_No such style :(_');
+  }
 }
+
 
   handler.help = ['fancy <text>']
   handler.tags = ['tool','maker']
-  handler.command = /^(ifancy|fancy)$/i
+  handler.command = /^(fff)$/i
   export default handler
